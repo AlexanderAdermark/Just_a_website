@@ -1,20 +1,9 @@
-// app.js
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-});
-
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.style.display = navLinks.style.display === 'none' ? 'flex' : 'none';
-}
-
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
