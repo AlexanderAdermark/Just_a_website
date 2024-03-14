@@ -7,32 +7,37 @@
     <title>Alexander's Personal Page</title>
     <link rel="stylesheet" href="/assets/styles.css">
     <script src="https://kit.fontawesome.com/d0d8222ea4.js" crossorigin="anonymous"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
+   
 <body>
-    
- <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
+      <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>   
     </div>
+    <div class="nav-bar">
     <a href="#home">Home</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
+    </div>
 </nav>
+<section class="hero" id="about">
+    <div class="bio-avatar">
+    <h2 class="bio-title">About Me</h2>
+    <img src="/assets/photos/IMG_0876.jpg" alt="Avatar" class="hero-img" loading="lazy">
+    <p class="bio-text">Web Developer with a passion for cybersecurity and cloud solutions</p>
+</div>
+</section>
 
-    <h1>Alexander</h1>
-    <p>Web Developer with a passion for cybersecurity and cloud solutions</p>
-</header>
-
-<section>
+<section class="more-about">
     <h2>About Me</h2>
     <p>Welcome to my personal webpage! I am Alexander, a dedicated web developer who finds joy in exploring the realms of cybersecurity and cloud solutions.</p>
-</section> <footer>
-    <p>Contact me: your@email.com</p>
+</section>
     <div>
-
         <section id="skills">
             <h2>Skills</h2>
             <div class="skill-card">
@@ -64,12 +69,58 @@
        
     <div>
         <Section id="projects">
+        <h2>Project 1<i class="fa-solid fa-gear"></i></h2>
+        <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt modi eligendi nostrum consequatur, reiciendis alias repellat repellendus enim numquam, quam vel laborum assumenda exercitationem in aut officiis dolores voluptatibus iste fugiat dolor culpa commodi aperiam ad. Veniam, quia! Sit suscipit sequi nostrum quam labore modi molestias vel itaque illum?</p>
+        <button type="text">Read More</button>
+        <h2>Project 2<i class="fa-solid fa-gear"></i></h2>
+        <img src="" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur minima perspiciatis sunt architecto ipsum laudantium quibusdam aspernatur non velit delectus, officia eum nobis facilis? Aspernatur quisquam voluptates nisi, quasi nemo odit obcaecati sapiente minima! Sapiente quasi maxime eligendi, laborum optio possimus, atque in quas iste quibusdam laboriosam nulla! Quos, delectus?</p>
+        <button type="text">Read More</button>
+        <h2>Project 3<i class="fa-solid fa-gear"></i></h2>
+        <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nihil nulla labore quibusdam sunt in, unde dicta, cumque facilis officiis ex odio? Cum alias, vero nobis tenetur expedita deserunt asperiores quisquam fugit quidem voluptas molestias omnis, est ipsa consequuntur a similique in reiciendis numquam voluptates deleniti quos ad id rem!</p>
+         <button type="text">Read More</button>
+        <h2>Project 4<i class="fa-solid fa-gear"></i></h2>
+        <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ut minima ad eius. Laboriosam, officiis exercitationem! Possimus beatae recusandae, deleniti aut omnis saepe accusantium similique illo porro aliquid deserunt nisi ut, sapiente inventore. Praesentium molestias totam quia recusandae impedit tenetur, animi illum cum deserunt architecto eveniet iure. Sequi, quaerat aperiam.</p>
+        <button type="text">Read More</button>
+
+
+
+        
 
         </Section>
     </div>
 
     <div>
-        <section id="contact "></section>
+        <section id="contact ">
+            <h2>Get in Touch!</h2>
+
+           <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+        </section>
     </div>
 
 
@@ -88,7 +139,7 @@
         
     </footer>
 
-<script src="/assets/app.js"></script>
+<script src="assets/app.js"></script>
 </body>
 
 </html>
