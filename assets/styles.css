@@ -27,7 +27,7 @@ header {
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color:#B4B4B8 ;
     position: relative;
   }
   
@@ -84,6 +84,7 @@ section {
   .hero img {
     height: 17.5rem;
     width: 17.5rem;
+    border-radius: 50%;
   }
   .bio {
     width: 25rem;
@@ -106,7 +107,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 20x;
 }
 
 .skill-card {
@@ -137,7 +138,39 @@ section {
     line-height: 1.4;
 }
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 8px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 2px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 4px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #B4B4B8;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: green;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
 
 footer {
     position: fixed;
@@ -147,7 +180,23 @@ footer {
     background-color:#E3E1D9 ;
     color:#B4B4B8;
     text-align: center;
+    
   }
+
+   .social-media{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  
+  /* Add a hover effect if you want */
+  .social-media:hover {
+    opacity: 0.7;
+  }
+  
   
   
   
